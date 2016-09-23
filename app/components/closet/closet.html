@@ -1,8 +1,26 @@
-<span>Closet</span>
+<div class="closet">
+  <h2>Closet</h2>
 
-<ul>
-  <li ng-repeat="item in $ctrl.items">
-    <span>{{item.name}}</span> (<span>{{item.weight}}</span> oz)
-  </li>
-</ul>
+  <table>
+    <thead>
+      <tr>
+        <th class="category">Category</th>
+        <th class="name">Name</th>
+        <th class="weight">Weight (oz)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="item in $ctrl.items">
+        <td class="category">{{item.category}}</td>
+        <td class="name">{{item.name}}</td>
+        <td class="weight">{{item.weight}}</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">{{$ctrl.items.length}} items</td>
+      </tr>
+    </tfoot>
+  </table>
 
+</div>
