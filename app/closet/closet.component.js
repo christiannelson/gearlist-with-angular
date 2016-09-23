@@ -66,7 +66,7 @@
   angular
     .module('gearApp')
     .component('closet', {
-      templateUrl: 'components/closet/closet.html',
+      templateUrl: 'closet/closet.template.html',
       controller: ClosetController
     });
 
