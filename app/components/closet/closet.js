@@ -17,10 +17,10 @@
   }
 
   angular
-    .module('myApp')
+    .module('gearApp')
     .component('closet', {
       templateUrl: 'components/closet/closet.html',
       controller: ClosetController
     });
-  
+
 })(window.angular);
