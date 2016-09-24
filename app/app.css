@@ -1,19 +1,36 @@
 /* app css stylesheet */
 
-.widget {
+body {
+  max-width: 1200px;
+}
+
+.inventories {
+  display: flex;
+  align-items: stretch;
+}
+
+backpack, closet {
+  flex-grow: 1;
+}
+
+item-details {
+  display: block;
+}
+
+backpack, closet, item-details {
   border: 1px solid #AAA;
   padding: 10px;
 }
 
-.closet .category {
+.backpack .category, .closet .category {
   width: 200px;
   text-align: left;
 }
-.closet .name {
+.backpack .name, .closet .name {
   width: 200px;
   text-align: left;
 }
-.closet .weight {
+.backpack .weight, .closet .weight {
   width: 100px;
   text-align: right;
 }

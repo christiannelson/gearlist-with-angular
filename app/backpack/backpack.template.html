@@ -1,0 +1,27 @@
+<div class="widget backpack">
+  <h2>In Your Backpack</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="category">Category</th>
+        <th class="name">Name</th>
+        <th class="weight">Weight (oz)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="item in $ctrl.items" ng-click="$ctrl.setItem(item)">
+        <td class="category">{{item.category}}</td>
+        <td class="name">{{item.name}}</td>
+        <td class="weight">{{item.weight}}</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">{{$ctrl.items.length}} items</td>
+        <td>???? oz</td>
+      </tr>
+    </tfoot>
+  </table>
+
+</div>

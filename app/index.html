@@ -15,14 +15,21 @@
     <script src="app.module.js"></script>
     <script src="current-item-service.js"></script>
     <script src="closet/closet.component.js"></script>
+    <script src="backpack/backpack.component.js"></script>
     <script src="item-details/item-details.component.js"></script>
   </head>
   <body>
     <h1>Build Your Kit</h1>
 
-    <closet></closet>
+    <div class="container">
+      <div class="inventories">
+        <backpack></backpack>
 
-    <item-details></item-details>
+        <closet></closet>
+      </div>
+
+      <item-details></item-details>
+    </div>
 
   </body>
 </html>
