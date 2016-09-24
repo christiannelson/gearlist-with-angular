@@ -1,5 +1,10 @@
 /* app css stylesheet */
 
+.widget {
+  border: 1px solid #AAA;
+  padding: 10px;
+}
+
 .closet .category {
   width: 200px;
   text-align: left;

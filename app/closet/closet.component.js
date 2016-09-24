@@ -1,7 +1,7 @@
 (function (angular) {
   'use strict';
 
-  function ClosetController() {
+  function ClosetController(currentItemService) {
     this.items = [
       {
         name: 'Osprey Exos 38',
@@ -61,6 +61,10 @@
         weight: 8.9
       }
     ]
+
+    this.setItem = function (item) {
+      currentItemService.setItem(item);
+    }
   }
 
   angular
