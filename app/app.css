@@ -1,16 +1,34 @@
 /* app css stylesheet */
 
 body {
+}
+
+.container {
+  width: 1200px;
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 .inventories {
   display: flex;
-  align-items: stretch;
 }
 
 backpack, closet {
-  flex-grow: 1;
+}
+
+table {
+}
+
+table tfoot {
+  font-weight: bold;
+}
+
+closet tbody tr:hover {
+  background-color: #EEE;
+}
+
+closet .selected {
+  background-color: #CCC;
 }
 
 item-details {
@@ -22,15 +40,17 @@ backpack, closet, item-details {
   padding: 10px;
 }
 
-.backpack .category, .closet .category {
+backpack .category, closet .category {
   width: 200px;
   text-align: left;
 }
-.backpack .name, .closet .name {
+
+backpack .name, closet .name {
   width: 200px;
   text-align: left;
 }
-.backpack .weight, .closet .weight {
+
+backpack .weight, closet .weight {
   width: 100px;
   text-align: right;
 }
