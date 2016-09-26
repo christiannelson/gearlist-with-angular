@@ -1,6 +1,4 @@
-(function (angular) {
-  'use strict';
-
+(function () {
   function ItemDetailsController($scope, currentItemService) {
     $scope.$watch(function () {
       return currentItemService.getItem();
@@ -12,8 +10,8 @@
   angular
     .module('gearApp')
     .component('itemDetails', {
-      templateUrl: 'item-details/item-details.template.html',
+      templateUrl: 'app/item-details/item-details.template.html',
       controller: ItemDetailsController
     });
 
-})(window.angular);
+})();

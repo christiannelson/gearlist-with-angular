@@ -1,20 +1,18 @@
-(function (angular) {
-  'use strict';
-
+(function () {
   angular
     .module('gearApp')
     .service('currentItemService', function () {
       var item;
 
       return {
-        getItem: function() {
+        getItem: function () {
           return item;
         },
 
-        setItem: function(newItem) {
+        setItem: function (newItem) {
           item = newItem;
         }
       }
     });
 
-})(window.angular);
+})();

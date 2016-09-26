@@ -1,6 +1,4 @@
-(function (angular) {
-  'use strict';
-
+(function () {
   function ClosetController(currentItemService) {
     this.items = [
       {
@@ -102,8 +100,8 @@
   angular
     .module('gearApp')
     .component('closet', {
-      templateUrl: 'closet/closet.template.html',
+      templateUrl: 'app/closet/closet.template.html',
       controller: ClosetController
     });
 
-})(window.angular);
+})();
