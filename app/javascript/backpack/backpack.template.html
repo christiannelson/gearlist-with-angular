@@ -1,24 +1,25 @@
-<h2>In Your Backpack</h2>
+<h2>Backpack</h2>
 
-<table>
-  <thead>
-    <tr>
-      <th class="category">Category</th>
-      <th class="name">Name</th>
-      <th class="weight">Weight (oz)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr ng-repeat="item in $ctrl.items" ng-click="$ctrl.setItem(item)">
-      <td class="category">{{item.category}}</td>
-      <td class="name">{{item.name}}</td>
-      <td class="weight">{{item.weight}}</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td colspan="2">{{$ctrl.items.length}} items</td>
-      <td>???? oz</td>
-    </tr>
-  </tfoot>
-</table>
+<div class="table-wrapper">
+  <table>
+    <thead>
+      <tr>
+        <th class="category">Category</th>
+        <th class="name">Name</th>
+        <th class="weight">Weight (oz)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="item in $ctrl.items" ng-click="$ctrl.setItem(item)">
+        <td class="category">{{item.category}}</td>
+        <td class="name">{{item.name}}</td>
+        <td class="weight">{{item.weight}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="table-footer">
+  <span class="item-count">{{$ctrl.items.length}} Items</span>
+  <span class="total-weight">11 lbs 9 oz</span>
+</div>
