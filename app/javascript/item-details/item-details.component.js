@@ -10,7 +10,7 @@
   angular
     .module('gearApp')
     .component('itemDetails', {
-      templateUrl: 'app/item-details/item-details.template.html',
+      templateUrl: 'item-details/item-details.template.html',
       controller: ItemDetailsController
     });
 

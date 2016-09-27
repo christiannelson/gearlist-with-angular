@@ -10,7 +10,7 @@
   angular
     .module('gearApp')
     .component('backpack', {
-      templateUrl: 'app/backpack/backpack.template.html',
+      templateUrl: 'backpack/backpack.template.html',
       controller: BackpackController
     });
 })();

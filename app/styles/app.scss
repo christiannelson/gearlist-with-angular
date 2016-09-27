@@ -14,9 +14,11 @@ body {
 }
 
 backpack, closet {
+  flex-grow: 1;
 }
 
 table {
+  width: 100%;
 }
 
 table tfoot {

@@ -30,5 +30,13 @@ module.exports = {
         'templates.js': /^app/
       }
     }
+  },
+
+  plugins: {
+    angular_templates: {
+      path_transform: function (path) {
+        return path.replace('app/javascript/', '');
+      }
+    }
   }
 };
