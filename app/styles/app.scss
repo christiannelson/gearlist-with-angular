@@ -15,6 +15,14 @@ html, body {
   align-content: stretch;
 }
 
+kit {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: stretch;
+}
+
 .inventories {
   display: flex;
   flex: 1;
@@ -39,6 +47,14 @@ backpack, closet {
   table {
     width: 100%;
     padding: 5px;
+
+    tbody {
+      min-height: 100px;
+
+      .dndPlaceholder {
+        background-color: #DDD;
+      }
+    }
   }
 }
 
@@ -52,15 +68,11 @@ backpack, closet {
   }
 }
 
-closet tbody tr:hover {
-  background-color: #EEE;
-}
-
-closet .selected {
-  background-color: #CCC;
-}
-
 backpack, closet {
+  tbody tr:hover {
+    background-color: #EEE;
+  }
+
   .category {
     width: 200px;
     text-align: left;

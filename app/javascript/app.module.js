@@ -3,5 +3,5 @@
 
   // debugger
 
-  angular.module('gearApp', ['templates'])
+  angular.module('gearApp', ['dndLists', 'templates'])
 })();

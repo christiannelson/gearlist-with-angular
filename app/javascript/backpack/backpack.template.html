@@ -9,11 +9,18 @@
         <th class="weight">Weight (oz)</th>
       </tr>
     </thead>
-    <tbody>
-      <tr ng-repeat="item in $ctrl.items" ng-click="$ctrl.setItem(item)">
+    <tbody dnd-list="$ctrl.items">
+      <tr ng-repeat="item in $ctrl.items"
+          dnd-draggable="item"
+          dnd-moved="$ctrl.items.splice($index, 1)"
+          dnd-effect-allowed="move"
+          ng-click="$ctrl.onItemSelected({item: item})" >
         <td class="category">{{item.category}}</td>
         <td class="name">{{item.name}}</td>
         <td class="weight">{{item.weight | number : 1}}</td>
+      </tr>
+      <tr class="dndPlaceholder">
+        <td colspan="3">Drop item here.</td>
       </tr>
     </tbody>
   </table>
@@ -21,5 +28,5 @@
 
 <div class="table-footer">
   <span class="item-count">{{$ctrl.items.length}} Items</span>
-  <span class="total-weight">11 lbs 9 oz</span>
+  <span class="total-weight">{{$ctrl.totalWeight() | weight }}</span>
 </div>
