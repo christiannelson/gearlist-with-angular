@@ -1,5 +1,5 @@
 <div class="widget item-details">
   <h2>Item: {{$ctrl.selectedItem.name}}</h2>
   <p>Category: {{$ctrl.selectedItem.category}}</p>
-  <p>Weight: {{$ctrl.selectedItem.weight}}</p>
+  <p>Weight: {{$ctrl.selectedItem.weight | number : 1}}</p>
 </div>

@@ -13,7 +13,7 @@
       <tr ng-repeat="item in $ctrl.items" ng-click="$ctrl.setItem(item)">
         <td class="category">{{item.category}}</td>
         <td class="name">{{item.name}}</td>
-        <td class="weight">{{item.weight}}</td>
+        <td class="weight">{{item.weight | number : 1}}</td>
       </tr>
     </tbody>
   </table>
