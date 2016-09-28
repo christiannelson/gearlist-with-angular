@@ -10,15 +10,11 @@
   "devDependencies": {
     "angularjs-templates-brunch": "1.0.0",
     "auto-reload-brunch": "^2.7.0",
-    "babel-brunch": "~6.0.0",
-    "babel-preset-es2016": "~6.11.0",
     "brunch": "^2.8.0",
     "clean-css-brunch": "^2.0.0",
     "css-brunch": "^2.6.0",
     "sass-brunch": "^2.6.0",
-    "http-server": "^0.9.0",
-    "javascript-brunch": "^2.0.0",
-    "uglify-js-brunch": "^2.0.0"
+    "javascript-brunch": "^2.0.0"
   },
   "scripts": {
     "postinstall": "bower install",
