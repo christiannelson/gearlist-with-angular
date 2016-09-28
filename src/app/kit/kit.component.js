@@ -11,5 +11,4 @@
       templateUrl: 'kit/kit.template.html',
       controller: KitController
     });
-
 })();

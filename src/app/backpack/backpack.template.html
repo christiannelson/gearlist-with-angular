@@ -14,7 +14,8 @@
           dnd-draggable="item"
           dnd-moved="$ctrl.items.splice($index, 1)"
           dnd-effect-allowed="move"
-          ng-click="$ctrl.onItemSelected({item: item})" >
+          ng-click="$ctrl.onItemSelected({item: item})">
+
         <td class="category">{{item.category}}</td>
         <td class="name">{{item.name}}</td>
         <td class="weight">{{item.weight | number : 1}}</td>
