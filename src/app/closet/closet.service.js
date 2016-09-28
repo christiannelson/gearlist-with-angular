@@ -91,7 +91,7 @@
         category: 'Shovel',
         weight: 0.6
       }
-    ]
+    ];
   }
 
   angular

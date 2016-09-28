@@ -2,7 +2,7 @@
   function KitController() {
     this.itemSelected = function (item) {
       this.selectedItem = item;
-    }
+    };
   }
 
   angular

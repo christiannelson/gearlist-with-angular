@@ -46,6 +46,10 @@ module.exports = {
       path_transform: function (path) {
         return path.replace('src/app/', '');
       }
+    },
+
+    jshint: {
+      pattern: /^src[\\\/].*\.js$/
     }
   }
 };

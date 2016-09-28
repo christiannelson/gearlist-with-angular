@@ -1,3 +1,3 @@
 (function () {
-  angular.module('gearApp', ['dndLists', 'templates'])
+  angular.module('gearApp', ['dndLists', 'templates']);
 })();

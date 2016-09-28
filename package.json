@@ -14,7 +14,8 @@
     "clean-css-brunch": "^2.0.0",
     "css-brunch": "^2.6.0",
     "sass-brunch": "^2.6.0",
-    "javascript-brunch": "^2.0.0"
+    "javascript-brunch": "^2.0.0",
+    "jshint-brunch": "^2.0.0"
   },
   "scripts": {
     "postinstall": "bower install",

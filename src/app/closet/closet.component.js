@@ -1,6 +1,6 @@
 (function () {
   function ClosetController(closetService) {
-    this.items = closetService.items
+    this.items = closetService.items;
   }
 
   angular
