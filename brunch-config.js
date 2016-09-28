@@ -1,4 +1,8 @@
 module.exports = {
+  paths: {
+    watched: ['src']
+  },
+
   modules: {
     definition: false,
     wrapper: false
@@ -11,23 +15,28 @@ module.exports = {
   files: {
     javascripts: {
       joinTo: {
-        'vendor.js': /^(?!app)/,
-        'app.js': /^app/
+        'vendor.js': /^bower_components/,
+        'app.js': /^src/
       },
       order: {
         before: [
-          'app/**/*.module.js'
+          'src/app/**/*.module.js'
         ]
       }
     },
 
     stylesheets: {
-      joinTo: 'app.css'
+      joinTo: 'app.css',
+      order: {
+        before: [
+          'src/styles/normalize.css'
+        ]
+      }
     },
 
     templates: {
       joinTo: {
-        'templates.js': /^app/
+        'templates.js': /^src\/app/
       }
     }
   },
@@ -35,7 +44,7 @@ module.exports = {
   plugins: {
     angular_templates: {
       path_transform: function (path) {
-        return path.replace('app/javascript/', '');
+        return path.replace('src/app/', '');
       }
     }
   }
