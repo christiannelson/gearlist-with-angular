@@ -1,5 +1,5 @@
 (function () {
-  function ClosetController(currentItemService) {
+  function ClosetController() {
     this.items = [
       {
         name: 'Osprey Exos 38',
@@ -91,17 +91,16 @@
         weight: 0.6
       }
     ]
-
-    this.setItem = function (item) {
-      currentItemService.setItem(item);
-    }
   }
 
   angular
     .module('gearApp')
     .component('closet', {
       templateUrl: 'closet/closet.template.html',
-      controller: ClosetController
+      controller: ClosetController,
+      bindings: {
+        'onItemSelected': '&'
+      }
     });
 
 })();

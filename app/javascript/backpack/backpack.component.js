@@ -1,10 +1,6 @@
 (function () {
-  function BackpackController(currentItemService) {
+  function BackpackController() {
     this.items = [];
-
-    this.setItem = function (item) {
-      currentItemService.setItem(item);
-    }
   }
 
   angular

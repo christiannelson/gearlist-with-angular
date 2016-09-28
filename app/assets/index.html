@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="app.css">
   </head>
   <body>
-    <div class="container">
+    <div class="container" ng-controller="KitController as kitController">
       <h1>Build Your Kit</h1>
 
       <div class="inventories">
         <backpack></backpack>
 
-        <closet></closet>
+        <closet on-item-selected="kitController.itemSelected(item)"></closet>
       </div>
 
-      <item-details></item-details>
+      <item-details selected-item="kitController.selectedItem"></item-details>
     </div>
 
     <script src="vendor.js"></script>

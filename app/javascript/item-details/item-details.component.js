@@ -1,17 +1,15 @@
 (function () {
-  function ItemDetailsController($scope, currentItemService) {
-    $scope.$watch(function () {
-      return currentItemService.getItem();
-    }, function (new_val) {
-      $scope.item = new_val;
-    });
+  function ItemDetailsController() {
   }
 
   angular
     .module('gearApp')
     .component('itemDetails', {
       templateUrl: 'item-details/item-details.template.html',
-      controller: ItemDetailsController
+      controller: ItemDetailsController,
+      bindings: {
+        selectedItem: '<'
+      }
     });
 
 })();
