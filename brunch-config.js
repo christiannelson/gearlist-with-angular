@@ -15,8 +15,8 @@ module.exports = {
   files: {
     javascripts: {
       joinTo: {
-        'vendor.js': /^bower_components/,
-        'app.js': /^src/
+        'app.js': /^src/,
+        'vendor.js': /^vendor/
       },
       order: {
         before: [
